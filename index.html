@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Axel Dynamics</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background: #f0f4f8;
+            color: #1a2634;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1a3e72;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ff6600;
+            box-shadow: 0 4px 10px rgba(26, 62, 114, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ffffff;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.4em;
+            color: #ff6600;
+            font-style: italic;
+        }
+        nav {
+            background: #255a9a;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ff6600;
+        }
+        nav a {
+            color: #ffd0b3;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            padding: 5px 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff6600;
+            color: #ffffff;
+            box-shadow: 0 2px 10px rgba(255, 102, 0, 0.5);
+        }
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #1a3e72;
+            border-bottom: 3px solid #ff6600;
+            padding-bottom: 12px;
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.7;
+            font-size: 1.15em;
+            color: #33475b;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        .project-card {
+            background: #ffffff;
+            border: 2px solid #ff6600;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(255, 102, 0, 0.2);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: default;
+        }
+        .project-card:hover {
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.35);
+            transform: translateY(-6px);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #1a3e72;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 450px;
+        }
+        input, textarea {
+            padding: 14px;
+            border-radius: 10px;
+            border: 2px solid #1a3e72;
+            background-color: #f0f4f8;
+            color: #1a2634;
+            font-size: 1.1em;
+            font-family: 'Orbitron', sans-serif;
+            resize: none;
+            transition: border-color 0.3s ease;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #8a8a8a;
+        }
+        input:focus, textarea:focus {
+            border-color: #ff6600;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+        }
+        button {
+            background-color: #ff6600;
+            color: #ffffff;
+            border: none;
+            padding: 16px;
+            font-size: 1.3em;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        button:hover {
+            background-color: #e65500;
+            box-shadow: 0 0 15px rgba(230, 85, 0, 0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1a3e72;
+            border-top: 4px solid #ff6600;
+            color: #ffd0b3;
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 60px;
+        }
+        .social-links {
+            margin-top: 15px;
+            font-size: 1.3em;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .social-links a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #e65500;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #1a3e72;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Axel Dynamics</h1>
+        <p>Innovación y Tecnología para el Futuro</p>
+    </header>
+    <nav>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#proyectos">Nuestros Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En Axel Dynamics, nuestra misión es desarrollar tecnologías innovadoras y soluciones avanzadas para mejorar la vida cotidiana y transformar el futuro.
+            Somos un equipo apasionado por la ingeniería, la automatización y la inteligencia artificial, comprometidos con la excelencia y la creatividad.
+        </p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Nuestros Proyectos</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Asistente Virtual Axel</h3>
+                <p>Un asistente inteligente con control por voz, reconocimiento facial y funciones avanzadas de automatización.</p>
+            </div>
+            <div class="project-card">
+                <h3>Guante Láser Reciclado</h3>
+                <p>Un dispositivo innovador que reutiliza componentes electrónicos para crear un guante capaz de proyectar láseres con precisión y seguridad.</p>
+            </div>
+            <div class="project-card">
+                <h3>Radar de Seguridad</h3>
+                <p>Un radar animado para monitorear áreas y detectar movimientos no autorizados con alertas en tiempo real.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo Electrónico" required />
+            <textarea rows="4" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@AxelDynamics" target="_blank" rel="noopener noreferrer">📺 YouTube: @AxelDynamics</a>
+            <a href="https://www.instagram.com/axeldynamics75/" target="_blank" rel="noopener noreferrer">📸 Instagram: axeldynamics75</a>
+        </div>
+        <div class="contact-info">
+            Correo: <a href="mailto:axeldynamics75@gmail.com">axeldynamics75@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Axel Dynamics. Todos los derechos reservados.<br />
+        Síguenos: 
+        <a href="https://www.youtube.com/@AxelDynamics" target="_blank" rel="noopener noreferrer" style="color:#ff6600;">YouTube</a> | 
+        <a href="https://www.instagram.com/axeldynamics75/" target="_blank" rel="noopener noreferrer" style="color:#ff6600;">Instagram</a>
+    </footer>
+</body>
+</html>
